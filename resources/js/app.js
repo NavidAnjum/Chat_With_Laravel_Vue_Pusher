@@ -12,7 +12,7 @@ const app = createApp({
         return {
 
             messages:[],
-            message:''
+            message:'',
         }
     },
     created() {

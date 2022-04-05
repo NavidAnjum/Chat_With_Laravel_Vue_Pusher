@@ -3,8 +3,9 @@
         <li class="left clearfix" v-for="message in messages">
             <div class="chat-body clearfix">
                 <div class="header">
-                    <strong class="primary-font">
-                        {{ message.name }}
+
+                    <strong class="primary-font" v-for="na in message.user">
+                        {{ na }}
 
                     </strong>
                 </div>
