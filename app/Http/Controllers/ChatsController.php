@@ -7,6 +7,7 @@ use App\Models\Message;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use function MongoDB\BSON\toJSON;
 
 class ChatsController extends Controller
@@ -33,7 +34,14 @@ class ChatsController extends Controller
      */
     public function fetchMessages()
     {
-           return $msg= Message::with('users')->get();
+        $msg=DB::table('users')
+            ->join('messages','users.id','=','messages.user_id')
+            ->select('users.name','messages.*')
+            ->get();
+      //  $msg= Message::with('users')->get();
+        //$name=User::find($msg[0]->user_id);
+        return $msg;
+
     }
 
     /**
