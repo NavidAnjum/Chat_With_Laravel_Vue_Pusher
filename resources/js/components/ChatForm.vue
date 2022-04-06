@@ -11,11 +11,11 @@
         />
         <input type="hidden" name="_token" :value="csrf" >
 
-        <span class="input-group-btn">
-            <button class="btn btn-primary btn-sm" id="btn-chat" @click="sendMessage">
-                Send
-            </button>
-        </span>
+<!--        <span class="input-group-btn">-->
+<!--            <button class="btn btn-primary btn-sm" id="btn-chat" @click="sendMessage">-->
+<!--                Send-->
+<!--            </button>-->
+<!--        </span>-->
     </div>
 </template>
 

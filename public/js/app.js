@@ -19349,9 +19349,6 @@ var _hoisted_1 = {
   "class": "input-group"
 };
 var _hoisted_2 = ["value"];
-var _hoisted_3 = {
-  "class": "input-group-btn"
-};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "btn-input",
@@ -19373,13 +19370,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     value: $data.csrf
   }, null, 8
   /* PROPS */
-  , _hoisted_2), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    "class": "btn btn-primary btn-sm",
-    id: "btn-chat",
-    onClick: _cache[2] || (_cache[2] = function () {
-      return $options.sendMessage && $options.sendMessage.apply($options, arguments);
-    })
-  }, " Send ")])]);
+  , _hoisted_2), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        <span class=\"input-group-btn\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("            <button class=\"btn btn-primary btn-sm\" id=\"btn-chat\" @click=\"sendMessage\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                Send"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("            </button>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        </span>")]);
 }
 
 /***/ }),

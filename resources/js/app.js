@@ -44,7 +44,7 @@ const app = createApp({
         addMessage(message,user) {
             //Pushes it to the messages array
             this.messages.push(message);
-           
+
 
             console.log(this.user)
                 //POST request to the messages route with the message data in order for our Laravel server to broadcast it.
