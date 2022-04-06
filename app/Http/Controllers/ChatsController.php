@@ -34,13 +34,12 @@ class ChatsController extends Controller
      */
     public function fetchMessages()
     {
-        $msg=DB::table('users')
-            ->join('messages','users.id','=','messages.user_id')
-            ->select('users.name','messages.*')
-            ->get();
-      //  $msg= Message::with('users')->get();
-        //$name=User::find($msg[0]->user_id);
-        return $msg;
+//        $msg=DB::table('users')
+//            ->join('messages','users.id','=','messages.user_id')
+//            ->select('users.name','messages.*')
+//            ->get();
+        return Message::with('user')->get();
+
 
     }
 
